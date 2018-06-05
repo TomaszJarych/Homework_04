@@ -17,16 +17,21 @@ public class Servlet_01_1 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Cookie[] cookies = request.getCookies();
+		String msg = "";
 		if (Objects.isNull(cookies)) {
-			request.setAttribute("language", "Czesc");
+			msg = "Czesc";
 		} else {
 			for (Cookie cookie : cookies) {
 				if (cookie.getName().equals("language")) {
-					request.setAttribute("language", cookie.getValue());
-				} 
+					msg = cookie.getValue();
+					break;
+				} else {
+					msg = "Czesc";
+				}
 			}
 
 		}
+		request.setAttribute("language", msg);
 		getServletContext().getRequestDispatcher("/WEB-INF/views/jsp_01.jsp").forward(request, response);
 
 	}

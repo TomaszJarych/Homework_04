@@ -74,7 +74,7 @@ Celem zadania jest obsługa i przetworzenie danych pobranych z formularza, któr
 11. Utwórz obiekt klasy z odpowiednimi danymi.
 
 Hint: Żeby poprawnie pracować z strefami czasowymi skorzystaj z [ZonedDateTime][zone-date-time] lub joda-time.
-Tutaj znajdziesz przykłady: [przykład1][date-example1] , [przykład2][date-example2]
+Tutaj znajdziesz przykłady: '[przykład1][date-example1] , [przykład2][date-example2]
 
 
 #### Zadanie 4 
