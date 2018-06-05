@@ -12,18 +12,18 @@
 <div>
 		<label> Home airport: <select name="home">
 		 <c:forEach items="${airports }" var="airport">
-				<option value="${airport.getCode() }">${airport.getName() }</option>		 
+				<option value="${airport.getName()};${airport.getCode()};${airport.getTimezone()}">${airport.getName()}</option>		 
 		 </c:forEach></select></label> 
 </div>
 <div>
 		 <label> Destination airport: <select name="destination">
 		 <c:forEach items="${airports }" var="airport">
-				<option value="${airport.getCode() }">${airport.getName() }</option>		 
+				<option value="${airport.getName()};${airport.getCode()};${airport.getTimezone()}">${airport.getName()}</option>		 
 		 </c:forEach></select></label> 
 </div>
-<div><label>Godzina wylotu: <input type="datetime-local" name="datetime" /></label></div>
+<div><label>Godzina wylotu: <input type="datetime-local" name="departure" /></label></div>
 <div><label>Czas lotu <input name="duration" type="number" min="0" step="1"></label></div>
-<div><label>Cena biletu <input name="price" type="number" min="0" step="0.01"></label></div>
+<div><label>Cena biletu <input name="price" type="number" min="0.0" step="0.01"></label></div>
 		<input type="submit" value="Wybierz">
 	
 

@@ -30,4 +30,13 @@ public class AirportDao {
 		}
 
 	}
+
+	public Airport getAirport(String airportData) {
+		String[] airportsToStringArray = airportData.split(";");
+		Airport airport = new Airport();
+		airport.setName(airportsToStringArray[0]);
+		airport.setCode(airportsToStringArray[1]);
+		airport.setTimezone(airportsToStringArray[2]);
+		return airport;
+	}
 }
