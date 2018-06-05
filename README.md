@@ -26,7 +26,7 @@ Hint: Odpowiednie dane przekaż i przetwórz w pliku widoku.
 
 #### Zadanie 2
 
-Zapoznaj się z wzorcem DAO - [Wikipedia] [dao-wiki].
+Zapoznaj się z wzorcem DAO 
 
 Jest to wzorzec podobny do znanego już nam ActiveRecords z tą różnicą, że wszystkie metody związane z operacjami na obiekcie są wydzielone do oddzielnej klasy np. ProductDao.
 
